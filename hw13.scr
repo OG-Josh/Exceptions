@@ -1,0 +1,40 @@
+Script started on Tue 16 Apr 2019 12:48:17 PM PDT
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m date
+Tue Apr 16 12:48:19 PDT 2019
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m ls -l
+total 12
+-rw-rw-r-- 1 cs1c cs1c 1710 Apr 16 12:42 hw13.cpp
+-rw-rw-r-- 1 cs1c cs1c    0 Apr 16 12:48 hw13.scr
+-rw-rw-r-- 1 cs1c cs1c  224 Apr 15 10:29 Makefile
+-rw-rw-r-- 1 cs1c cs1c 3452 Apr 16 12:43 queue.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m make all
+g++ -g hw13.cpp -o hw13
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m ls -l
+total 48
+-rwxrwxr-x 1 cs1c cs1c 34488 Apr 16 12:48 [0m[01;32mhw13[0m
+-rw-rw-r-- 1 cs1c cs1c  1710 Apr 16 12:42 hw13.cpp
+-rw-rw-r-- 1 cs1c cs1c     0 Apr 16 12:48 hw13.scr
+-rw-rw-r-- 1 cs1c cs1c   224 Apr 15 10:29 Makefile
+-rw-rw-r-- 1 cs1c cs1c  3452 Apr 16 12:43 queue.h
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m ./hw13
+============TEST ASSERT MACRO===================
+Test assert macro. Create Queue integer.
+	-Queue should be empty. assert(intQueue.isEmpty() == true)
+	-Test passed!!!!!!
+	-Queue should not be full. assert(intQueue.isFull() == false)
+	-Test passed!!!!!!
+============TEST EXCEPTION===================
+Create double Queue with capacity 5.
+Try to dequeue from queue empty
+	-DEQUEUE ERROR with message: Can not dequeue from empty queue!
+Queue: [ ]
+Enqueue to full!
+Queue: [ 1.5 3.4 5.3 7.2 ]
+Try to enqueue more when queue is full. doubleQueue.enqueue(16.5)
+	-ENQUEUE ERROR with message: The cappacity is exceeded. Can not enqueue more
+Queue: [ 1.5 3.4 5.3 7.2 ]
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m 
+]0;cs1c@cs1c-VirtualBox ~/Desktop/hw13[01;32mcs1c@cs1c-VirtualBox[00m [01;34m~/Desktop/hw13 $[00m exit
+exit
+
+Script done on Tue 16 Apr 2019 12:48:41 PM PDT
